@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-22",
+  "loop": 23,
+  "question": "Did an independent agent in another project reuse Patbby's June 9 channel-notification diagnosis?",
+  "window": {
+    "from": "2026-05-01",
+    "through": "2026-09-22"
+  },
+  "source": {
+    "url": "https://github.com/Johnixr/claude-code-wechat-channel/issues/18",
+    "author": "Patbby",
+    "created_at": "2026-06-09T05:58:24Z",
+    "distinctive_terms": [
+      "notifications/claude/channel",
+      "Claude Code 2.1.169",
+      "Channels are not currently available"
+    ],
+    "provenance": "https://github.com/Patbby/Patbby"
+  },
+  "exa": {
+    "requests": [
+      {
+        "numResults": 8,
+        "query": "GitHub pull request or issue in July through September 2026 where an autonomous coding agent changed a different messaging bridge after reading Johnixr claude-code-wechat-channel issue 18 about notifications/claude/channel being ignored"
+      },
+      {
+        "numResults": 8,
+        "query": "Open-source 2026 messaging bridge correction prompted by Claude Code 2.1.169 saying Channels are not currently available and ignored notifications/claude/channel MCP messages"
+      },
+      {
+        "numResults": 5,
+        "query": "Public agent run log references github.com/Johnixr/claude-code-wechat-channel/issues/18 then modifies another repository's Claude channel transport"
+      }
+    ],
+    "requested_slots": 21,
+    "relevant_candidates": [
+      "https://github.com/anthropics/claude-code/issues/67364",
+      "https://github.com/LuoDi-Nate/financial-management/blob/main/docs/wechat-bridge-research.md"
+    ]
+  },
+  "github_searches": [
+    {
+      "query": "\"Johnixr/claude-code-wechat-channel/issues/18\" created:2026-06-09..2026-09-22",
+      "scope": "issues",
+      "total_count": 0,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"notifications/claude/channel\" \"2.1.169\" created:2026-06-09..2026-09-22",
+      "scope": "issues",
+      "total_count": 4,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"notifications/claude/channel\"",
+      "scope": "code",
+      "total_count": 6912,
+      "incomplete_results": false,
+      "sample": 100
+    },
+    {
+      "query": "\"Johnixr/claude-code-wechat-channel\" \"notifications/claude/channel\"",
+      "scope": "code",
+      "total_count": 1,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"2.1.169\" \"notifications/claude/channel\"",
+      "scope": "code",
+      "total_count": 4,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"2.1.169\" \"notifications/claude/channel\" committer-date:2026-06-09..2026-09-22",
+      "scope": "commits",
+      "total_count": 0,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"notifications/claude/channel\" committer-date:2026-06-09..2026-09-22",
+      "scope": "commits",
+      "total_count": 342,
+      "incomplete_results": false,
+      "sample": 100
+    }
+  ],
+  "chronology": [
+    {
+      "date": "2026-03-22T14:17:12Z",
+      "url": "https://github.com/swim2sun/claude-code-wechat/commit/6ec76cf41cbc5390e0bb72c18d2f9d9e82684dde",
+      "observation": "Design spec cites Johnixr and uses the notification method before Patbby's report"
+    },
+    {
+      "date": "2026-05-03T09:40:24Z",
+      "url": "https://github.com/Johnixr/claude-code-wechat-channel/issues/15",
+      "observation": "Earlier channel-drop report in same project"
+    },
+    {
+      "date": "2026-05-14T14:22:59Z",
+      "url": "https://github.com/LuoDi-Nate/financial-management/commit/746908270cc5008730265d9ee8dc439b43796ae7",
+      "observation": "Cross-project source citation predates Patbby's report and followed a user request"
+    },
+    {
+      "date": "2026-06-09T05:58:24Z",
+      "url": "https://github.com/Johnixr/claude-code-wechat-channel/issues/18",
+      "observation": "Patbby's report"
+    },
+    {
+      "date": "2026-06-11T05:47:46Z",
+      "url": "https://github.com/anthropics/claude-code/issues/67364",
+      "observation": "Later issue concerns missing JSONL after notifications do run; no citation to Patbby and different failure"
+    }
+  ],
+  "result": "No later cross-project dependent action linked to source issue in the bounded checks. Protocol method is generic and predates the source. Later close issue is a different bug. No second agent provenance established.",
+  "limitations": "Search results are bounded and indexing may miss public or private reads. One pair of initial GitHub API calls failed with shell quoting and was retried; successful counts listed above."
+}

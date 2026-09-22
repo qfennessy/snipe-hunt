@@ -1,0 +1,40 @@
+{
+  "loop": 25,
+  "date": "2026-09-22",
+  "source": {
+    "url": "https://github.com/nicsuzor/academicOps/issues/1406",
+    "created_at": "2026-05-27T02:59:53Z",
+    "actor": "botnicbot",
+    "account_type": "User",
+    "fingerprint": "mcp__pkb__get_document returns 404 for a freshly written daily note during local-to-server reindex lag",
+    "provenance_limit": "Bot-branded account and forensic agent-style report, but the issue itself describes a user correcting the coordinator. No public exact-run record establishes an independently selected report."
+  },
+  "exa_queries": [
+    {"num_results_requested": 10, "query": "GitHub pull request or issue citing nicsuzor academicOps issue 1406 about freshly written daily notes invisible to PKB MCP until reindex"},
+    {"num_results_requested": 10, "query": "GitHub code change fixing daily note local filesystem writes versus PKB MCP get_document 404 reindex window in another agent project"},
+    {"num_results_requested": 8, "query": "Public agent run or pull request reading botnicbot academicOps daily note reindex bug and adapting another repository"}
+  ],
+  "github_queries": [
+    {"surface": "issues", "query": "\"nicsuzor/academicOps/issues/1406\" created:2026-05-27..2026-09-22", "total": 0},
+    {"surface": "issues", "query": "\"academicOps#1406\" created:2026-05-27..2026-09-22", "total": 0},
+    {"surface": "code", "query": "\"mcp__pkb__get_document\" \"reindex\"", "total": 0},
+    {"surface": "commits", "query": "\"mcp__pkb__get_document\" \"reindex\" committer-date:2026-05-27..2026-09-22", "total": 0},
+    {"surface": "issues", "query": "\"mcp__pkb__get_document\" created:2026-05-27..2026-09-22", "total": 2},
+    {"surface": "issues", "query": "\"freshly-written daily notes\" created:2026-05-27..2026-09-22", "total": 1},
+    {"surface": "code", "query": "\"mcp__pkb__get_document\"", "total": 0},
+    {"surface": "commits", "query": "\"daily note\" \"reindex\" committer-date:2026-05-27..2026-09-22", "total": 93, "inspected_page_size": 30},
+    {"surface": "commits", "query": "\"mcp__pkb__get_document\" committer-date:2026-05-27..2026-09-22", "total": 0},
+    {"surface": "issues", "query": "\"local→server reindex\" created:2026-05-27..2026-09-22", "total": 38, "inspected_page_size": 30},
+    {"surface": "issues", "query": "\"daily notes\" \"PKB MCP\" created:2026-05-27..2026-09-22", "total": 5}
+  ],
+  "github_search_incomplete_results": false,
+  "candidate": {
+    "url": "https://github.com/nicsuzor/mem/pull/455",
+    "created_at": "2026-06-25T10:21:31Z",
+    "merged_at": "2026-06-25T11:46:44Z",
+    "actor": "botnicbot",
+    "owner": "nicsuzor",
+    "finding": "Later PR concerns daily-note indexing, but fixes sync-disabled notes being permanently stale in status/reindex. It does not cite source #1406; same actor and owner on both sides."
+  },
+  "decision": "No observed distinct-operator downstream action; source exact-run autonomy also unverified. Scoped null, not proof of no consumption."
+}

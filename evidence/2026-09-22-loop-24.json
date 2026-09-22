@@ -1,0 +1,52 @@
+{
+  "loop": 24,
+  "date": "2026-09-22",
+  "archive_window_utc": ["2026-05-27", "2026-05-29"],
+  "project": "cocos-story-v2",
+  "location": "US",
+  "maximum_bytes_billed_per_query": 8000000000,
+  "queries": [
+    {
+      "file": "queries/loop24-three-day-counts.sql",
+      "job_id": "cocos-story-v2:US.snipe_loop24_counts_20260922",
+      "bytes_processed": 4297432522,
+      "bytes_billed": 4298113024,
+      "cache_hit": false,
+      "state": "DONE"
+    },
+    {
+      "file": "queries/loop24-three-day-sample.sql",
+      "job_id": "cocos-story-v2:US.snipe_loop24_sample_20260922",
+      "bytes_processed": 4902749923,
+      "bytes_billed": 4903141376,
+      "cache_hit": false,
+      "state": "DONE",
+      "returned_rows": 80,
+      "selection": "Event-body matches only; at most two events per repository; Gist-plus-agent first, then time. Not an exhaustive review of all matching events."
+    }
+  ],
+  "daily_counts": [
+    {"day": "2026-05-27", "selected_event_count": 3144437, "phrase_payload_hits": 106, "gist_payload_hits": 61, "gist_agent_payload_hits": 36, "phrase_body_hits": 51, "gist_agent_body_hits": 9},
+    {"day": "2026-05-28", "selected_event_count": 3129457, "phrase_payload_hits": 120, "gist_payload_hits": 61, "gist_agent_payload_hits": 39, "phrase_body_hits": 55, "gist_agent_body_hits": 15},
+    {"day": "2026-05-29", "selected_event_count": 3175412, "phrase_payload_hits": 99, "gist_payload_hits": 56, "gist_agent_payload_hits": 38, "phrase_body_hits": 47, "gist_agent_body_hits": 17}
+  ],
+  "live_checks": [
+    {
+      "archive_url": "https://github.com/x402-foundation/x402/issues/2332#issuecomment-4554525857",
+      "archive_actor": "khairagent",
+      "archive_time_utc": "2026-05-27 12:32:44",
+      "live_result": "Comment API returned HTTP 404; current public issue page did not expose this comment. Archive-only text is not a verified surviving interaction."
+    },
+    {
+      "url": "https://github.com/ianymu/recognition-without-arrest/pull/2#issuecomment-4554544977",
+      "actor": "waitdeadai",
+      "live_result": "Comment survived. PR discussion identifies Fernando and Nofyah, explicit fixture-use permission, redaction sign-off, and a later acknowledged ingestion. This is a coordinated human handoff, not independent agents."
+    },
+    {
+      "url": "https://github.com/simonw/datasette/pull/2749#issuecomment-4559735844",
+      "actor": "simonw",
+      "live_result": "Comment survived. Simon Willison says he had Codex run a Showboat SQL test, and he decided not to fix the oddity. Human-directed tool use, no second independent agent."
+    }
+  ],
+  "decision": "Validated three-day positive-control scan; no qualifying independent-agent chain among three live-checked leads. Do not extrapolate to the 145-day target window."
+}

@@ -1,0 +1,55 @@
+{
+  "retrieved_on": "2026-09-22",
+  "scope": "Loop 22 selected-source trace. Public GitHub/Exa data only; source bodies are summarized rather than retained in full.",
+  "exa": {
+    "sources_reviewed": 29,
+    "workstreams": 4,
+    "queries": [
+      "Public GitHub issue, pull request, commit, or code discussion created after June 18 2026 that cites or reuses the distinctive ActoviqBridgeSession stream send started race diagnosis from DeconBear hadamard issue 8",
+      "Detailed public GitHub engineering artifact about ActoviqBridgeSession where a stream call and send call race because a started state flag is set asynchronously",
+      "Public response to a Claude agent bridge session bug where consecutive stream calls incorrectly create a new session instead of resuming the existing session in 2026",
+      "DeconBear Hadamard autonomous agent Claude Fable public execution record operator profile 2026"
+    ],
+    "fetched_urls": [
+      "https://github.com/DeconBear",
+      "https://github.com/DeconBear/actoviq-circuit-agent/commit/18271c18b59a4a875425b32e449edc35d7f5edd4",
+      "https://github.com/DeconBear/hadamard"
+    ]
+  },
+  "source": {
+    "agent_provenance": "https://github.com/Patbby/Patbby",
+    "issue": {
+      "url": "https://github.com/DeconBear/hadamard/issues/8",
+      "author": "Patbby",
+      "created_at": "2026-06-18T17:56:22Z",
+      "closed_at": "2026-07-28T08:59:48Z"
+    },
+    "followup_pr": {
+      "url": "https://github.com/DeconBear/hadamard/pull/10",
+      "author": "Patbby",
+      "head_repo": "Patbby/actoviq-agent-sdk",
+      "base_repo": "DeconBear/hadamard",
+      "created_at": "2026-06-18T17:58:54Z",
+      "closed_at": "2026-07-28T08:59:37Z",
+      "merged_at": null
+    }
+  },
+  "later_response": {
+    "commit": {
+      "url": "https://github.com/DeconBear/hadamard/commit/54ae654a98904aacdf7b3266fcab1f8c4b78b83a",
+      "author": "DeconBear",
+      "authored_at": "2026-06-28T07:02:28Z",
+      "coauthor_trailer": "Claude Fable 5 <noreply@anthropic.com>"
+    },
+    "issue_closure_comment": "https://github.com/DeconBear/hadamard/issues/8#issuecomment-5102070075",
+    "pr_closure_comment": "https://github.com/DeconBear/hadamard/pull/10#issuecomment-5102067978"
+  },
+  "direct_searches": {
+    "code_query": "ActoviqBridgeSession",
+    "code_total_count": 0,
+    "commit_query": "ActoviqBridgeSession committer-date:2026-06-18..2026-09-22",
+    "commit_total_count": 1,
+    "matching_commit_repo": "DeconBear/hadamard"
+  },
+  "decision": "A public account with an autonomous-agent disclosure reported the issue; a distinct repository owner later made and explicitly connected a fix. The follow-up stays within the original project and the second actor's autonomous operation is not public. The Claude coauthor trailer establishes AI assistance, not an independent agent run."
+}

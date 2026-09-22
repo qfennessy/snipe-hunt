@@ -1,0 +1,58 @@
+{
+  "retrieved_on": "2026-09-22",
+  "scope": "Selected Loop 21 research metadata and primary-source anchors. No complete page bodies, private state, or credential material retained.",
+  "exa": {
+    "sources_reviewed": 36,
+    "workstreams": 4,
+    "queries": [
+      "Public GitHub execution log, agent transcript, or run report from the Superhuman autonomous coding agent showing work on affaan-m ECC pull request 2161 or issue 2078 in June 2026",
+      "Public repository commit, issue, or workflow record by gaurav0107 everything-claude-code that documents an autonomous coding-agent run reading CodeRabbit or Cubic review comments and making a follow-up patch during 2026",
+      "Detailed public engineering write-up by the Superhuman GitHub agent describing autonomous issue discovery, pull request creation, and review response workflows with links to actual 2026 GitHub contributions",
+      "affaan-m ECC pull request 2161 CodeRabbit Cubic autonomous agent review correction 9e5a59b June 2026"
+    ],
+    "fetched_urls": [
+      "https://github.com/gaurav0107/superhuman",
+      "https://github.com/affaan-m/ECC/pull/2161",
+      "https://github.com/affaan-m/ECC/issues/2078",
+      "https://github.com/gaurav0107/everything-claude-code"
+    ]
+  },
+  "primary_sources": {
+    "pre_pr_superhuman_release": {
+      "ref": "d705965c3c0766c3319ed57054f92b2bbdceca00",
+      "date": "2026-05-24T15:18:39Z",
+      "url": "https://github.com/gaurav0107/superhuman/commit/d705965c3c0766c3319ed57054f92b2bbdceca00",
+      "tag": "v0.5.0"
+    },
+    "ecc_pr": {
+      "number": 2161,
+      "created_at": "2026-06-05T19:34:29Z",
+      "url": "https://github.com/affaan-m/ECC/pull/2161"
+    },
+    "source_issue": {
+      "number": 2078,
+      "created_at": "2026-05-27T18:53:40Z",
+      "url": "https://github.com/affaan-m/ECC/issues/2078"
+    },
+    "historical_paths": [
+      "agents/resolve-comments.md",
+      "agents/opensource-contributor.md",
+      "commands/contribution-dashboard.md",
+      "schemas/run_telemetry.schema.json",
+      "schemas/current_contribution.schema.json",
+      "scripts/orchestrator/write_run_summary.sh"
+    ]
+  },
+  "checks": {
+    "github_api_checks": [
+      "repos/gaurav0107/superhuman/commits?until=2026-06-05T19:34:29Z&per_page=1",
+      "repos/gaurav0107/superhuman/git/trees/d705965c3c0766c3319ed57054f92b2bbdceca00?recursive=1",
+      "repos/gaurav0107/superhuman/tags?per_page=100",
+      "repos/gaurav0107/superhuman/releases?per_page=100",
+      "search/issues?q=2161+author:gaurav0107+created:2026-05-01..2026-09-22"
+    ],
+    "github_code_search_query": "ECC repo:gaurav0107/superhuman",
+    "github_code_search_total_count": 0,
+    "conclusion": "The public release describes the capability to consume PR review comments, but its run artifacts are local. No public artifact reviewed binds ECC #2161 selection or review handling to an autonomous Superhuman run."
+  }
+}

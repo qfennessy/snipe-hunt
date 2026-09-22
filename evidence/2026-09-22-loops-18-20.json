@@ -1,0 +1,521 @@
+{
+  "retrieved_on": "2026-09-22",
+  "scope": "Selected outputs from loops 18–20; not complete HTTP responses or an exhaustive search. Body text omitted from the account-search snapshot.",
+  "loop18": {
+    "exact_controls": [
+      {
+        "action": "opened",
+        "actor": "sepo-agent-app[bot]",
+        "comment_id": null,
+        "created_at": "2026-05-04 03:45:00",
+        "excerpt": null,
+        "has_comment_body": "false",
+        "has_issue_body": "false",
+        "has_pr_body": "false",
+        "id": "9043612919",
+        "number": "131",
+        "repo": "self-evolving/repo",
+        "type": "PullRequestEvent"
+      },
+      {
+        "action": "labeled",
+        "actor": "sepo-agent-app[bot]",
+        "comment_id": null,
+        "created_at": "2026-05-04 04:10:33",
+        "excerpt": null,
+        "has_comment_body": "false",
+        "has_issue_body": "false",
+        "has_pr_body": "false",
+        "id": "9044066282",
+        "number": "131",
+        "repo": "self-evolving/repo",
+        "type": "PullRequestEvent"
+      }
+    ],
+    "day_20260528_counts": [
+      {
+        "event_count": "3129457",
+        "gist_agent_matches": "39",
+        "gist_matches": "61",
+        "phrase_matches": "120",
+        "with_comment_body": "40135",
+        "with_issue_body": "48805",
+        "with_pr_body": "0"
+      }
+    ],
+    "reproduction": {
+      "original_phrase": false,
+      "corrected_phrase": true,
+      "original_gist": false,
+      "corrected_gist": true
+    }
+  },
+  "loop19": {
+    "exa_requests": [
+      {
+        "query": "Public GitHub accounts of autonomous AI agents contributing pull requests to unrelated open source projects during May through September 2026 with operator disclosure and links to their actual GitHub profile",
+        "numResults": 10,
+        "objective": "Identify named agent accounts with primary operator disclosure or public execution records. Prioritize actual contributions and profile links. Exclude framework feature descriptions and generic AI coding tool lists."
+      },
+      {
+        "query": "prql-bot tend-agent GitHub autonomous agent upstream issues operator max-sixty provenance",
+        "numResults": 5,
+        "objective": "Find primary repository docs and workflows tying these accounts to autonomous execution and identifying their operator. Include upstream bug reports."
+      },
+      {
+        "query": "ClankOS GitHub autonomous agent operator public open source contributions",
+        "numResults": 5,
+        "objective": "Find ClankOS profile and operator disclosure, repositories and actual outbound issues or PRs. Identify shared bounty coordination when documented."
+      }
+    ],
+    "github_searches": [
+      {
+        "query": "author:Patbby -user:Patbby created:2026-05-01..2026-09-22",
+        "sort": "created",
+        "order": "asc",
+        "per_page": 20,
+        "total_count": 11,
+        "incomplete_results": false,
+        "items": [
+          {
+            "actor": "Patbby",
+            "comments": 0,
+            "created_at": "2026-06-09T05:58:24Z",
+            "title": "Claude Code 2.1.169 不支持 notifications/claude/channel 通知，微信消息无法送达 AI",
+            "url": "https://github.com/Johnixr/claude-code-wechat-channel/issues/18"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 0,
+            "created_at": "2026-06-14T20:16:22Z",
+            "title": "fix(cli): handle actoviq-react config load errors explicitly",
+            "url": "https://github.com/DeconBear/hadamard/pull/2"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 1,
+            "created_at": "2026-06-14T20:16:58Z",
+            "title": "test",
+            "url": "https://github.com/DeconBear/hadamard/issues/3"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 0,
+            "created_at": "2026-06-14T20:17:32Z",
+            "title": "actoviq-react silently swallows config-load errors and falls back to defaults",
+            "url": "https://github.com/DeconBear/hadamard/issues/4"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 0,
+            "created_at": "2026-06-14T20:31:01Z",
+            "title": "SessionStore.list() fails entirely when any single session file is corrupt",
+            "url": "https://github.com/DeconBear/hadamard/issues/5"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 0,
+            "created_at": "2026-06-14T20:31:57Z",
+            "title": "fix(storage): SessionStore.list() should skip unreadable session files",
+            "url": "https://github.com/DeconBear/hadamard/pull/6"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 2,
+            "created_at": "2026-06-14T20:47:10Z",
+            "title": "polish(cli): add --version / -v flag to actoviq-react and actoviq-tui",
+            "url": "https://github.com/DeconBear/hadamard/pull/7"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 1,
+            "created_at": "2026-06-18T17:56:22Z",
+            "title": "stream() and send() race on  flag: consecutive calls create new sessions instead of resuming",
+            "url": "https://github.com/DeconBear/hadamard/issues/8"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 1,
+            "created_at": "2026-06-18T17:56:36Z",
+            "title": "actoviq-react /exit race: process.exit(0) fires before sdk.close() completes",
+            "url": "https://github.com/DeconBear/hadamard/issues/9"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 2,
+            "created_at": "2026-06-18T17:58:54Z",
+            "title": "fix(parity): set ActoviqBridgeSession.started synchronously in stream()",
+            "url": "https://github.com/DeconBear/hadamard/pull/10"
+          },
+          {
+            "actor": "Patbby",
+            "comments": 1,
+            "created_at": "2026-06-18T18:22:10Z",
+            "title": "actoviq-tui does not register a SIGINT handler — Ctrl+C after raw mode drops shutdown() cleanup",
+            "url": "https://github.com/DeconBear/hadamard/issues/11"
+          }
+        ]
+      },
+      {
+        "query": "author:prql-bot -repo:PRQL/prql created:2026-05-01..2026-09-22",
+        "sort": "created",
+        "order": "asc",
+        "per_page": 20,
+        "total_count": 37,
+        "incomplete_results": false,
+        "items": [
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-05-04T08:56:30Z",
+            "title": "weekly skill re-approves PRs already approved on the same commit",
+            "url": "https://github.com/max-sixty/tend/issues/384"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-05-15T18:34:24Z",
+            "title": "ci-fix: transient classifier ignores repeat occurrences",
+            "url": "https://github.com/max-sixty/tend/issues/505"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 3,
+            "created_at": "2026-05-18T09:03:34Z",
+            "title": "tend-mention/handle: POST-job cleanup of local <setup> action fails on stale PR branches (followup to #391)",
+            "url": "https://github.com/max-sixty/tend/issues/561"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-05-24T08:51:00Z",
+            "title": "claude-code-action: background `until [ -f X.completed ]` loops orphan workflows past session end",
+            "url": "https://github.com/max-sixty/tend/issues/594"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-05-25T16:50:42Z",
+            "title": "Apply same threshold to repo-local skill overlay PRs as bundled-skill changes",
+            "url": "https://github.com/max-sixty/tend/issues/603"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 6,
+            "created_at": "2026-05-28T09:11:32Z",
+            "title": "tend-ci-fix + tend-triage race opens duplicate PRs on same nightly failure",
+            "url": "https://github.com/max-sixty/tend/issues/627"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-06-07T00:35:10Z",
+            "title": "Self-conversation guard blocks triage of bot-authored CI-failure issues",
+            "url": "https://github.com/max-sixty/tend/issues/665"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 2,
+            "created_at": "2026-06-09T08:59:14Z",
+            "title": "skills(triage): commit/push/PR before the full-suite gate — a session that ends mid-wait loses the entire fix",
+            "url": "https://github.com/max-sixty/tend/issues/674"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 2,
+            "created_at": "2026-06-14T18:47:10Z",
+            "title": "New version: PRQL.prqlc version 0.13.13",
+            "url": "https://github.com/microsoft/winget-pkgs/pull/387855"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 6,
+            "created_at": "2026-06-19T08:19:01Z",
+            "title": "nightly: regen reverts Dependabot action-ref bumps (e.g. actions/checkout v7→v6)",
+            "url": "https://github.com/max-sixty/tend/issues/714"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-06-20T04:29:13Z",
+            "title": "running-in-ci: scope rule that blocks the ideal action makes the bot silently pick a local override instead of offering to file upstream / relax the rule",
+            "url": "https://github.com/max-sixty/tend/issues/716"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 2,
+            "created_at": "2026-07-24T15:03:50Z",
+            "title": "New version: PRQL.prqlc version 0.13.14",
+            "url": "https://github.com/microsoft/winget-pkgs/pull/407440"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 5,
+            "created_at": "2026-08-03T09:02:56Z",
+            "title": "review: /code-review second pass is unreachable — disable-model-invocation since Claude Code 2.1.215",
+            "url": "https://github.com/max-sixty/tend/issues/817"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 2,
+            "created_at": "2026-08-05T09:17:00Z",
+            "title": "tend-review: POST cleanup of the local <setup> composite fails with 'Index was out of range' when a PR changes its step count (post-adoption variant of #561)",
+            "url": "https://github.com/max-sixty/tend/issues/846"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-08-06T08:56:45Z",
+            "title": "token-usage.json reports all zeros for cancelled sessions (no `type:\"result\"` entry), under-counting cost by the cancellation rate",
+            "url": "https://github.com/max-sixty/tend/issues/871"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-08-08T08:16:05Z",
+            "title": "nightly: conflict detection reads mergeable once, so a lazily-computed UNKNOWN is silently treated as no conflict",
+            "url": "https://github.com/max-sixty/tend/issues/897"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 3,
+            "created_at": "2026-08-09T08:17:07Z",
+            "title": "tend-mention: bot's own non-empty-body review on someone else's PR starts a guaranteed no-op session (#747's sibling leg)",
+            "url": "https://github.com/max-sixty/tend/issues/915"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-08-11T08:26:03Z",
+            "title": "nightly closes a PR out from under the mention session that just fixed it — divergent dispositions on the same review (#865 sibling)",
+            "url": "https://github.com/max-sixty/tend/issues/943"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 7,
+            "created_at": "2026-08-13T07:14:43Z",
+            "title": "review: `cancel-in-progress: false` with no `timeout-minutes` lets a wedged run hold the per-PR queue for the full 360-min job cap",
+            "url": "https://github.com/max-sixty/tend/issues/962"
+          },
+          {
+            "actor": "prql-bot",
+            "comments": 1,
+            "created_at": "2026-08-16T08:06:12Z",
+            "title": "poll-pr-checks.sh: contexts(first: 100) has no cursor, so any commit with >100 checks is permanently UNVERIFIED",
+            "url": "https://github.com/max-sixty/tend/issues/998"
+          }
+        ]
+      },
+      {
+        "query": "author:gaurav0107 is:pr -repo:imkp1/superhuman created:2026-05-01..2026-09-22",
+        "sort": "created",
+        "order": "desc",
+        "per_page": 20,
+        "total_count": 220,
+        "incomplete_results": false,
+        "items": [
+          {
+            "actor": "gaurav0107",
+            "comments": 3,
+            "created_at": "2026-07-27T22:55:21Z",
+            "title": "🐛 fix(api): stop the ollama bracket prompt from corrupting the query",
+            "url": "https://github.com/HKUDS/LightRAG/pull/3498"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 3,
+            "created_at": "2026-07-27T22:21:09Z",
+            "title": "fix(core): mark all projects affected when a global package is not in the graph",
+            "url": "https://github.com/nrwl/nx/pull/36485"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 11,
+            "created_at": "2026-07-27T21:46:54Z",
+            "title": "fix(continuous-learning-v2): warn when the observer never survives a hook invocation (#2489)",
+            "url": "https://github.com/affaan-m/ECC/pull/2606"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 8,
+            "created_at": "2026-07-27T21:29:28Z",
+            "title": "fix(core): stop discarding API errors that quote an HTML tag",
+            "url": "https://github.com/apache/superset/pull/42489"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 0,
+            "created_at": "2026-07-26T19:22:41Z",
+            "title": "🤖 GDScript: Don't suggest completion options for Lua-style dictionary keys",
+            "url": "https://github.com/godotengine/godot/pull/121806"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 0,
+            "created_at": "2026-07-26T19:20:31Z",
+            "title": "api: coerce tool call arguments declared with oneOf",
+            "url": "https://github.com/ollama/ollama/pull/17407"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 3,
+            "created_at": "2026-07-26T19:18:08Z",
+            "title": "fix(normal): \"gn\" with a pending operator changes the Visual marks",
+            "url": "https://github.com/neovim/neovim/pull/41001"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 1,
+            "created_at": "2026-07-26T19:17:13Z",
+            "title": "fix: resolve Outlook 365 sender address and convert HTML-only message bodies",
+            "url": "https://github.com/microsoft/markitdown/pull/2245"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 1,
+            "created_at": "2026-07-26T19:13:47Z",
+            "title": "fix(packages/excalidraw): guard missing FontFace.unicodeRange in svg export",
+            "url": "https://github.com/excalidraw/excalidraw/pull/11764"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 2,
+            "created_at": "2026-07-26T19:08:25Z",
+            "title": "Fix OFT/BOFT constraint scaling when loading lycoris models",
+            "url": "https://github.com/Comfy-Org/ComfyUI/pull/15093"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 3,
+            "created_at": "2026-07-26T19:07:26Z",
+            "title": "WebGLTextureUtils: Fix 3D/array texture readback in copyTextureToBuffer.",
+            "url": "https://github.com/mrdoob/three.js/pull/34124"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 2,
+            "created_at": "2026-07-26T19:07:19Z",
+            "title": "fix(ext/node): apply backpressure in Readable.toWeb()",
+            "url": "https://github.com/denoland/deno/pull/36321"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 0,
+            "created_at": "2026-07-26T13:04:48Z",
+            "title": "docs(specs): editions-separation design — core / enterprise / cloud (#36)",
+            "url": "https://github.com/langprobe/langprobe/pull/56"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 0,
+            "created_at": "2026-07-26T12:50:21Z",
+            "title": "v2: full-site QA + LangSmith parity + UX pass",
+            "url": "https://github.com/langprobe/langprobe/pull/55"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 4,
+            "created_at": "2026-07-25T15:14:29Z",
+            "title": "fix(resolve-ecc-root): require ECC skills, not just scripts, before accepting a root (#2544)",
+            "url": "https://github.com/affaan-m/ECC/pull/2577"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 7,
+            "created_at": "2026-07-23T20:46:01Z",
+            "title": "fix(marketplace): use object source so Claude Cowork remote sync succeeds (#2542)",
+            "url": "https://github.com/affaan-m/ECC/pull/2555"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 2,
+            "created_at": "2026-07-23T19:46:25Z",
+            "title": "📧 fix: Add .msg (application/vnd.ms-outlook) Support to File Upload",
+            "url": "https://github.com/danny-avila/LibreChat/pull/14415"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 2,
+            "created_at": "2026-07-19T23:38:16Z",
+            "title": "Match secret SCOPE only on URI component boundaries",
+            "url": "https://github.com/duckdb/duckdb/pull/23946"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 2,
+            "created_at": "2026-07-19T23:02:41Z",
+            "title": "fix(file source): don't warn about empty files too small to fingerprint",
+            "url": "https://github.com/vectordotdev/vector/pull/25895"
+          },
+          {
+            "actor": "gaurav0107",
+            "comments": 1,
+            "created_at": "2026-07-19T22:20:51Z",
+            "title": "Fix MongoDB Decimal128 rendering as raw bytes in table/JSON view",
+            "url": "https://github.com/beekeeper-studio/beekeeper-studio/pull/4511"
+          }
+        ]
+      }
+    ],
+    "profile_readme_heads": {
+      "Patbby": {
+        "date": "2026-05-08T03:25:12Z",
+        "sha": "6b82cb64e508069861bb7ede05f81f506c248711",
+        "url": "https://github.com/Patbby/Patbby/commit/6b82cb64e508069861bb7ede05f81f506c248711"
+      },
+      "superhuman": {
+        "date": "2026-08-11T18:34:54Z",
+        "sha": "93d35c6cf641aa89c740ecee45dc6a46705b73ee",
+        "url": "https://github.com/gaurav0107/superhuman/commit/93d35c6cf641aa89c740ecee45dc6a46705b73ee"
+      }
+    }
+  },
+  "loop20": {
+    "ecc2161_metadata": {
+      "author": "gaurav0107",
+      "author_association": "CONTRIBUTOR",
+      "base_repo": "affaan-m/ECC",
+      "created_at": "2026-06-05T19:34:29Z",
+      "head_repo": "gaurav0107/everything-claude-code",
+      "merged_at": "2026-06-07T05:01:30Z",
+      "merged_by": "affaan-m",
+      "url": "https://github.com/affaan-m/ECC/pull/2161"
+    },
+    "ecc2161_review_metadata": [
+      {
+        "actor": "coderabbitai[bot]",
+        "commit_id": "9e5a59be58edd04c000853c92f5211bd832eb08a",
+        "created_at": "2026-06-05T19:54:34Z",
+        "id": 3365022696,
+        "in_reply_to_id": null,
+        "path": "scripts/hooks/gateguard-fact-force.js",
+        "url": "https://github.com/affaan-m/ECC/pull/2161#discussion_r3365022696"
+      },
+      {
+        "actor": "cubic-dev-ai[bot]",
+        "commit_id": "9e5a59be58edd04c000853c92f5211bd832eb08a",
+        "created_at": "2026-06-05T19:55:49Z",
+        "id": 3365028183,
+        "in_reply_to_id": null,
+        "path": "scripts/hooks/gateguard-fact-force.js",
+        "url": "https://github.com/affaan-m/ECC/pull/2161#discussion_r3365028183"
+      }
+    ],
+    "ecc2161_commit_metadata": [
+      {
+        "author": "gaurav0107",
+        "author_name": "gaurav0107",
+        "committer": "gaurav0107",
+        "date": "2026-06-05T19:33:57Z",
+        "sha": "a3f795e094715c3f4bd582ec1dbcf1949e3208d4"
+      },
+      {
+        "author": "gaurav0107",
+        "author_name": "gaurav0107",
+        "committer": "gaurav0107",
+        "date": "2026-06-05T20:21:51Z",
+        "sha": "9e5a59be58edd04c000853c92f5211bd832eb08a"
+      }
+    ]
+  }
+}

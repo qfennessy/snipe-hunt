@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-22",
+  "scope": "2026-05-01 through 2026-09-22 inclusive (145 days)",
+  "loop_26": {
+    "sql": "queries/loop26-cross-owner-calibration.sql",
+    "slice": ["2026-05-27", "2026-05-29"],
+    "returned_rows": 39,
+    "jobs": [
+      {"id": "cocos-story-v2:US.snipe_loop26_calibration_20260922", "bytes_processed": 4902749923, "bytes_billed": 4903141376},
+      {"id": "cocos-story-v2:US.bqjob_r58b346a6d9558ebf_000001a0cad0c646_1", "bytes_processed": 4902749923, "bytes_billed": 4903141376, "purpose": "Accidental repeat solely to count returned rows; no cache hit"}
+    ],
+    "calibration": [
+      "Many supposed external owners were the commenter's own Gist account or GitHub user-attachments.",
+      "Fullsend retro #1625 linked an external Konflux agent PR, but both agents were roles in the Fullsend platform.",
+      "A cross-owner link is a lead, not evidence of independent operation or dependent action."
+    ]
+  },
+  "loop_27": {
+    "byte_cap_per_query": 300000000000,
+    "jobs": [
+      {"sql": "queries/loop27-full-window-ranked.sql", "id": "cocos-story-v2:US.snipe_loop27_full_20260922", "bytes_processed": 229633857338, "bytes_billed": 229633949696, "eligible_count": 1062, "rows_returned": 100, "caveat": "bq CLI default max_rows=100; actor of an IssuesEvent can be a label bot while issue body is human-authored"},
+      {"sql": "queries/loop27-full-window-authored.sql", "id": "cocos-story-v2:US.snipe_loop27_authored_20260922", "bytes_processed": 229633857338, "bytes_billed": 229633949696, "eligible_count": 455, "rows_returned": 120, "caveat": "Author is taken from comment/issue/PR user; only event's own text is eligible. Top-ranked sample remains noisy and is not a complete manual review."}
+    ],
+    "positive_control": "The May 28 Fullsend #1625 archive event survived the full-window scan and live GitHub verification.",
+    "known_coverage_limit": "GH Archive missing events were established in loop 18; 455 is a query-specific retrieval count, not all collaborations."
+  },
+  "loop_28": {
+    "exa_searches": [
+      {"query": "GitHub Fullsend code agent konflux-ci-coder and fullsend-ai-retro bot shared workflow retrospective issue 1625 pull request 6507", "num_results_requested": 5},
+      {"query": "GitHub OpenClaw issue 97588 clawsweeper bot patelmm79 DarojaAI lane starvation agent authorship", "num_results_requested": 5}
+    ],
+    "fullsend_chain": [
+      {"url": "https://github.com/konflux-ci/konflux-ci/pull/6507", "actor": "konflux-ci-coder[bot]", "fact": "PR footer explicitly says created by fullsend code agent; merged May 5"},
+      {"url": "https://github.com/konflux-ci/konflux-ci/pull/6090", "actor": "MonishPuttu", "fact": "Human PR closed without merge May 28 05:56 UTC; Fullsend retro issue says it was generated from this PR"},
+      {"url": "https://github.com/fullsend-ai/fullsend/issues/1625", "actor": "fullsend-ai-retro[bot]", "fact": "Retro issue opened May 28 06:05 UTC and cites #6507's leaked agent working files"},
+      {"url": "https://github.com/fullsend-ai/fullsend/issues/1625#issuecomment-4561282685", "actor": "fullsend-ai-triage[bot]", "fact": "May 28 06:12 UTC triage comment specifies git-exclude and post-script fix"},
+      {"url": "https://github.com/fullsend-ai/fullsend/pull/1627", "actor": "fullsend-ai-coder[bot]", "fact": "PR opened May 28 06:20 UTC, closes #1625, merged June 8"},
+      {"url": "https://github.com/fullsend-ai/fullsend/pull/1021", "fact": "May 15 Fullsend change defines retro, triage, and coder as dispatch roles/apps of one platform"}
+    ],
+    "other_trace": {
+      "url": "https://github.com/openclaw/openclaw/issues/97588",
+      "issue_author": "patelmm79",
+      "archive_event_actor": "clawsweeper[bot]",
+      "verified_bot_action": "ClawSweeper added labels June 28 23:28 UTC to an already human-authored issue; bot was not the issue-body author."
+    },
+    "decision": "Fullsend is a real public agent-to-agent dependency chain but prearranged under one platform, not independently operated. OpenClaw was false authorship from archive event semantics. No confirmed independent encounter in these bounded traces."
+  }
+}
