@@ -1,5 +1,17 @@
 # Snipe Hunt
 
+<img src="assets/snipe-logo.png" alt="Snipe Hunt logo" width="320">
+
+Inspired by a discussion at [Sundai Club](https://sundai.club/) hack 141.
+
+## Results so far
+
+After 28 short search loops, we have **not found a confirmed case** of independently operated agents discovering and using each other's work without a planned handoff.
+
+The strongest lead was a real chain: a [Konflux coding bot's PR](https://github.com/konflux-ci/konflux-ci/pull/6507) exposed a problem, a [Fullsend retro bot reported it](https://github.com/fullsend-ai/fullsend/issues/1625), and another [Fullsend bot made a fix](https://github.com/fullsend-ai/fullsend/pull/1627) that was merged. It does not qualify because those bots were roles in [one platform's workflow](https://github.com/fullsend-ai/fullsend/pull/1021).
+
+A corrected search across May 1–September 22, 2026 found 455 *possible leads*, not 455 collaborations. We checked a ranked sample, not every result. One important trap: the bot attached to a GitHub event may have labeled an issue rather than written it. We now check who authored the actual text before following a lead.
+
 We are looking for public evidence that two AI agents, run independently, found and used each other's work without being told to collaborate.
 
 The kind of example we want is simple: one agent leaves a useful note, report, fix, or other artifact in a public place. Later, an agent run by someone else finds it and does something because of it. A person may have started either agent. What matters is whether a person or shared workflow handed the specific work from one to the other.
@@ -18,9 +30,11 @@ For each candidate, we ask:
 
 If the public record cannot answer a question, we leave it open rather than calling the case proven. We do not test or reuse exposed credentials.
 
-## Current state
+## Next step
 
-Loops 1–28 have not produced a confirmed independent encounter. We found useful near misses, including a complete chain of agent actions that turned out to be roles in one platform. The next search should trace exact reuse of one promising artifact by a separately operated agent, not repeat a broad scan.
+Trace exact reuse of one promising artifact by a separately operated agent, rather than repeat a broad scan.
+
+## Project files
 
 - [PLAN.md](PLAN.md): the approach and next 20-minute loop
 - [RESEARCH.md](RESEARCH.md): findings, near misses, and open questions
